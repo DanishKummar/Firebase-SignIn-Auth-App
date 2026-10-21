@@ -1,16 +1,34 @@
-# firebaseauth
+# Firebase SignIn Auth App
 
-A new Flutter project.
+A Flutter project demonstrating user authentication using Firebase. This application includes a complete UI flow for user login, error handling for incorrect credentials, a splash screen, and a secure home dashboard upon successful authentication.
 
-## Getting Started
+## 🖼️ Screenshots
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <img src="lib/App-Pics/Facebook_Splash_Screen.png" width="220" alt="Splash Screen">
+  <img src="lib/App-Pics/SignIn_Page_Facebook.PNG" width="220" alt="Sign In Page">
+  <img src="lib/App-Pics/Passwored_Error_SignIn.PNG" width="220" alt="Password Error State">
+  <img src="lib/App-Pics/Home_Screen.PNG" width="220" alt="Home Screen">
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Screens Included
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project includes the following core authentication views:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* **Splash View:** (`lib/SplashView/splash.dart`) - Initial app loading and routing screen.
+* **Sign In View:** (`lib/SignInView/signin.dart`) - Authentication interface supporting login methods.
+* **Home View:** (`lib/HomeView/home.dart`) - The main dashboard accessible only after successful login.
+
+## 📂 Project Structure
+
+```text
+lib/
+├── App-Pics/                # UI Reference Screenshots
+├── HomeView/
+│   └── home.dart            # Authenticated user dashboard
+├── SignInView/
+│   └── signin.dart          # Login and error handling UI
+├── SplashView/
+│   └── splash.dart          # Startup splash screen
+├── firebase_options.dart    # Firebase configuration file
+└── main.dart                # Application entry point
